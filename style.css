@@ -1,0 +1,46 @@
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.main {
+  background-image: url("images/mainBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  height: 800px;
+}
+
+.header__navBar {
+  display: inline-block;
+  text-align: right;
+}
+
+.header__navBar__item {
+  margin: 5px 10px;
+  opacity: 0.5;
+  font-size: 24px;
+}
+.header__text {
+  width: 60%;
+  background-color: black;
+  color: white;
+  margin: auto;
+  margin-top: 350px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.9;
+}
+.header__text__title {
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.header__text__description {
+  padding-bottom: 30px;
+}
