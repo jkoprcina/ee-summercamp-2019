@@ -1,8 +1,17 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 h1 {
   font-size: 50px;
 }
 
 h2 {
+  font-size: 34px;
+}
+h3 {
   font-size: 22px;
 }
 
@@ -16,12 +25,12 @@ h2 {
   height: 800px;
 }
 
-.header__navBar {
+.header__nav-bar {
   display: inline-block;
   text-align: right;
 }
 
-.header__navBar__item {
+.header__nav-bar__item {
   margin: 5px 10px;
   opacity: 0.5;
   font-size: 24px;
@@ -43,4 +52,33 @@ h2 {
 
 .header__text__description {
   padding-bottom: 30px;
+}
+
+.main__item {
+  height: 450px;
+  background-color: rgba(206, 197, 197, 0.8);
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.main__item__skill-image {
+  width: 50%;
+  background-image: url("images/skills.jpg");
+  background-repeat: no-repeat;
+}
+
+.main__item__skill-list {
+  width: 50%;
+  font-size: 30px;
+}
+
+.footer {
+  height: 230px;
+  background-color: rgba(206, 197, 197, 0.9);
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
 }
