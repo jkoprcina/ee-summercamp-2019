@@ -1,0 +1,31 @@
+.singleItem{
+  font-style: Merriweather;
+  padding: 4px 10px;
+  background-color: rgb(220,220,220, 0.4);
+  width: 300px;
+  margin: 5px;
+}
+
+.prettyMinus {
+  padding: 2px 4px;
+  margin: 0 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+.prettyPlus {
+  padding: 2px 4px;
+  margin: 0 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+.prettyMinus:hover {
+  background-color: red;
+}
+
+.prettyPlus:hover{
+  background-color: green;
+}
