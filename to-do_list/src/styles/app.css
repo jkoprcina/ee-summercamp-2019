@@ -1,0 +1,36 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+.app {
+  display: flex;
+}
+
+.groceries {
+  width: 40%;
+}
+
+.basket {
+  width: 40%;
+}
+
+.delete-basket {
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 2px 10px;
+}
+
+.delete-basket:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+  .app {
+    flex-direction: column;
+  }
+}

@@ -11,8 +11,11 @@ const Basket = props => {
         }}
         className="singleItem"
       >
-        <span onClick={() => props.onBuyItem(props.name)}>
-          {props.name} {props.quantity}
+        <span
+          className="item-to-remove"
+          onClick={() => props.onBuyItem(props.name)}
+        >
+          {props.name} x{props.quantity}
         </span>
         <span
           className="prettyMinus"

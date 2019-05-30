@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Basket from "./components/Basket";
 import Groceries from "./components/Groceries";
-import "./styles/app.css";
+import "../src/styles/app.css";
 
 class App extends Component {
   constructor(props) {
@@ -22,19 +22,19 @@ class App extends Component {
         ["Cheese", 0, false],
         ["Butter", 0, false]
       ],
-      basketIsEmpty : true
+      basketIsEmpty: true
     };
   }
 
-  checkIfBasketIsEmpty(){
+  checkIfBasketIsEmpty() {
     let basketIsEmptyCopy = true;
     this.state.items.forEach(item => {
       if (item[1] > 0) {
         basketIsEmptyCopy = false;
       }
     });
-    this.setState({ basketIsEmpty : basketIsEmptyCopy });
-  } 
+    this.setState({ basketIsEmpty: basketIsEmptyCopy });
+  }
 
   handleAddItem = selectedItemName => {
     let itemsCopy = [...this.state.items];
@@ -81,31 +81,35 @@ class App extends Component {
   render() {
     const { items } = this.state;
     return (
-      <>
-        <div>
+      <div className="app">
+        <div className="groceries">
           <h2>Groceries</h2>
           <Groceries items={items} onAddItem={() => this.handleAddItem} />
         </div>
         <div>
           <h2>Basket</h2>
-          {this.state.basketIsEmpty ?
-          ( "The basket is empty") :
-          (<div>
-            {items.map((item, index) => (
-              <Basket
-                key={index}
-                name={item[0]}
-                quantity={item[1]}
-                bought={item[2]}
-                onRemoveItem={this.handleRemoveItem}
-                onBuyItem={this.handleBuyItem}
-              />
-            ))}
-          </div>)}
+          {this.state.basketIsEmpty ? (
+            "The basket is empty"
+          ) : (
+            <div className="basket">
+              {items.map((item, index) => (
+                <Basket
+                  key={index}
+                  name={item[0]}
+                  quantity={item[1]}
+                  bought={item[2]}
+                  onRemoveItem={this.handleRemoveItem}
+                  onBuyItem={this.handleBuyItem}
+                />
+              ))}
+            </div>
+          )}
           <br />
-          <button onClick={this.handleDeleteBasket}>Delete basket</button>
+          <button className="delete-basket" onClick={this.handleDeleteBasket}>
+            Delete basket
+          </button>
         </div>
-      </>
+      </div>
     );
   }
 }

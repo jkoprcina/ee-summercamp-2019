@@ -1,31 +1,39 @@
-.singleItem{
-  font-style: Merriweather;
-  padding: 4px 10px;
-  background-color: rgb(220,220,220, 0.4);
+.singleItem {
+  padding: 10px 14px;
+  background-color: rgb(220, 220, 220, 0.4);
   width: 300px;
-  margin: 5px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .prettyMinus {
   padding: 2px 4px;
-  margin: 0 5px;
   border: 1px solid lightgrey;
   border-radius: 5px;
   background-color: lightgrey;
+  float: right;
 }
 
 .prettyPlus {
   padding: 2px 4px;
-  margin: 0 5px;
   border: 1px solid lightgrey;
   border-radius: 5px;
   background-color: lightgrey;
+  float: right;
 }
 
 .prettyMinus:hover {
   background-color: red;
+  border-color: red;
+  cursor: pointer;
 }
 
-.prettyPlus:hover{
+.prettyPlus:hover {
   background-color: green;
+  border-color: green;
+  cursor: pointer;
+}
+
+.item-to-remove {
+  cursor: pointer;
 }
